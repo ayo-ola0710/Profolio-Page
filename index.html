@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/93d9fc9c96.js" crossorigin="anonymous"></script>
+  <title>Portfolio</title>
+</head>
+<body class="bg-white text-black">
+  <header class="fixed top-4 left-1/2 transform -translate-x-1/2 flex justify-between items-center w-[90%] bg-black bg-opacity-80 text-white backdrop-blur-md py-2 px-6 rounded-2xl z-50">
+    <a href="#" class="text-white text-3xl font-bold  whitespace-nowrap transition-all duration-300 ease-in-out hover:transform hover:scale-110">Israel Olatunle</a>
+
+    <nav class="hidden md:flex gap-10">
+      <a href="#about" class="relative text-white font-semibold before:absolute before:content-[''] before:w-0 before:left-0 before:h-[4px] before:top-[25px] before:rounded-md before:transition-all before:duration-500 before:ease-in-out before:bg-red-700 hover:before:w-full">About</a>
+      <a href="#experience" class="relative text-white font-semibold before:absolute before:content-[''] before:w-0 before:left-0 before:h-[4px] before:top-[25px] before:rounded-md before:transition-all before:duration-500 before:ease-in-out before:bg-red-700 hover:before:w-full">Experience</a>
+      <a href="#projects" class="relative text-white font-semibold before:absolute before:content-[''] before:w-0 before:left-0 before:h-[4px] before:top-[25px] before:rounded-md before:transition-all before:duration-500 before:ease-in-out before:bg-red-700 hover:before:w-full">Projects</a>
+      <a href="#contact" class="relative text-white font-semibold before:absolute before:content-[''] before:w-0 before:left-0 before:h-[4px] before:top-[25px] before:rounded-md before:transition-all before:duration-500 before:ease-in-out before:bg-red-700 hover:before:w-full">Contact</a>
+    </nav>
+
+    <button class="hidden md:block px-4 py-1 rounded-2xl font-semibold text-md text-white pointer transition-all duration-300 ease-in-out whitespace-nowrap bg-red-700 hover:transform hover:scale-110 hover:bg-red-500"><a href="https://github.com/ayo-ola0710">Visit Github</a></button>
+
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-white text-3xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="fixed top-20 left-0 w-full bg-black text-white flex flex-col gap-6 text-center py-6 hidden z-40">
+    <a href="#about" class="hover:bg-red-500 py-2">About</a>
+    <a href="#experience" class="hover:bg-red-500 py-2">Experience</a>
+    <a href="#projects" class="hover:bg-red-500 py-2">Projects</a>
+    <a href="#contact" class="hover:bg-red-500 py-2">Contact</a>
+  </div>
+
+  <section id="about" class="min-h-screen px-6 md:px-32 py-32 flex flex-col md:flex-row gap-10 items-center justify-center ">
+    <img src="/newpic.jpeg" alt="profile" class="w-64 md:w-80 rounded-full" />
+    <div class="text-center md:text-left">
+      <h3 class="text-2xl opacity-80">Hi, I'm</h3>
+      <h1 class="text-5xl font-bold mb-4">Israel Olatunle</h1>
+      <p class="text-red-500 text-2xl">Frontend Developer</p>
+      <div class="flex gap-6 justify-center md:justify-start mt-6">
+        <button class="rounded-2xl px-8 py-2 border border-black font-semibold whitespace-nowrap transition-all duration-200 ease-in-out hover:bg-black hover:text-white hover:transform hover:scale-110">Download CV</button>
+        <button class="rounded-2xl px-8 py-2 border border-black font-semibold whitespace-nowrap transition-all duration-200 ease-in-out hover:bg-black hover:text-white hover:transform hover:scale-110"><a href="#contact">Contact</a></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="px-6 md:px-32 py-20">
+    <h2 class="text-center text-5xl font-bold mb-14">Experience</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="border border-black  p-8 rounded-2xl flex flex-col items-baseline justify-left transition-all duration-300 ease-in-out hover:transform hover:scale-110 hover:bg-black hover:text-white">
+        <i class="fa-solid fa-code text-3xl mb-4"></i>
+        <h3 class="text-xl font-semibold text-red-500 mb-2">Frontend Development</h3>
+        <h4 class="mb-2">2024-2025</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="border border-black  p-8 rounded-2xl flex flex-col items-baseline justify-left transition-all duration-300 ease-in-out hover:transform hover:scale-110 hover:bg-black hover:text-white">
+        <i class="fa-solid fa-folder-open text-3xl mb-4"></i>
+        <h3 class="text-xl font-semibold text-red-500 mb-2">Open Source Contributor</h3>
+        <h4 class="mb-2">2025</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="border border-black  p-8 rounded-2xl flex flex-col items-baseline justify-left transition-all duration-300 ease-in-out hover:transform hover:scale-110 hover:bg-black hover:text-white">
+        <i class="fa-solid fa-chalkboard-user text-3xl mb-4"></i>
+        <h3 class="text-xl font-semibold text-red-500 mb-2">Instructor</h3>
+        <h4 class="mb-2">2025</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="px-6 md:px-32 py-20">
+    <h2 class="text-center text-5xl font-bold mb-14">Recent Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="border border-black  p-5 rounded-2xl flex flex-col items-baseline justify-left transition-all duration-300 ease-in-out hover:transform hover:scale-110 hover:bg-black hover:text-white">
+        <img src="/tiket.png" alt="ticket" class="w-full h-48 object-cover rounded-2xl mb-4" />
+        <h3 class="text-xl font-semibold text-red-500 mb-2">Ticket Generator</h3>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="flex gap-4">
+          <button class="rounded-2xl px-8 py-2 border border-red-500  font-semibold whitespace-nowrap transition-all duration-200 ease-in-out hover:bg-black hover:text-white hover:border-white"><a href="https://ticket-generator-delta-one.vercel.app/">Live Demo</a></button>
+          <button class="rounded-2xl px-8 py-2 border border-red-500  font-semibold whitespace-nowrap transition-all duration-200 ease-in-out hover:bg-black hover:text-white hover:border-white"><a href="https://github.com/ayo-ola0710/Ticket-Generator">GitHub Repo</a></button>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="border border-black  p-5 rounded-2xl flex flex-col items-baseline justify-left transition-all duration-300 ease-in-out hover:transform hover:scale-110 hover:bg-black hover:text-white">
+        <img src="/quiz.png" alt="quiz" class="w-full h-48 object-cover rounded-2xl mb-4" />
+        <h3 class="text-xl font-semibold text-red-500 mb-2">Quiz App</h3>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="flex gap-4">
+          <button class="rounded-2xl px-8 py-2 border border-red-500  font-semibold whitespace-nowrap transition-all duration-200 ease-in-out hover:bg-black hover:text-white hover:border-white"><a href="https://quiz-game-psi-two.vercel.app/">Live Demo</a></button>
+          <button class="rounded-2xl px-8 py-2 border border-red-500  font-semibold whitespace-nowrap transition-all duration-200 ease-in-out hover:bg-black hover:text-white hover:border-white"><a href="https://github.com/ayo-ola0710/Quiz-Game">GitHub Repo</a></button>
+        </div>
+      </div>
+      <div class="border border-black  p-5 rounded-2xl flex flex-col items-baseline justify-left transition-all duration-300 ease-in-out hover:transform hover:scale-110 hover:bg-black hover:text-white">
+        <img src="/landing.png" alt="landing" class="w-full h-48 object-cover rounded-2xl mb-4" />
+        <h3 class="text-xl font-semibold text-red-500 mb-2">Landing Page</h3>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="flex gap-4">
+          <button class="rounded-2xl px-8 py-2 border border-red-500  font-semibold whitespace-nowrap transition-all duration-200 ease-in-out hover:bg-black hover:text-white hover:border-white"><a href="https://aurora-landing-page-five.vercel.app/">Live Demo</a></button>
+          <button class="rounded-2xl px-8 py-2 border border-red-500  font-semibold whitespace-nowrap transition-all duration-200 ease-in-out hover:bg-black hover:text-white hover:border-white"><a href="https://github.com/ayo-ola0710/Aurora-Landing_page">GitHub Repo</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 px-6 md:px-20">
+    <h2 class="text-center text-4xl font-bold mb-12">Contact Me</h2>
+    <div class="flex flex-col items-center gap-4">
+      <input type="email" placeholder="example@gmail.com" class="border px-10 py-2 rounded-2xl w-full max-w-md" />
+      <button class="rounded-2xl px-8 py-2 border border-black  font-semibold whitespace-nowrap transition-all duration-200 ease-in-out hover:bg-black hover:text-white hover:border-white hover:transform hover:scale-110">Submit</button>
+    </div>
+  </section>
+
+  <footer class="bg-gray-100 py-10">
+    <ul class="flex justify-center gap-8 mb-4">
+      <li><a href="#about" class="relative font-semibold before:absolute before:content-[''] before:w-0 before:left-0 before:h-[4px] before:top-[25px] before:rounded-md before:transition-all before:duration-500 before:ease-in-out before:bg-red-700 hover:before:w-full">About</a></li>
+      <li><a href="#experience" class="relative font-semibold before:absolute before:content-[''] before:w-0 before:left-0 before:h-[4px] before:top-[25px] before:rounded-md before:transition-all before:duration-500 before:ease-in-out before:bg-red-700 hover:before:w-full">Experience</a></li>
+      <li><a href="#projects" class="relative font-semibold before:absolute before:content-[''] before:w-0 before:left-0 before:h-[4px] before:top-[25px] before:rounded-md before:transition-all before:duration-500 before:ease-in-out before:bg-red-700 hover:before:w-full">Projects</a></li>
+      <li><a href="#contact" class="relative font-semibold before:absolute before:content-[''] before:w-0 before:left-0 before:h-[4px] before:top-[25px] before:rounded-md before:transition-all before:duration-500 before:ease-in-out before:bg-red-700 hover:before:w-full">Contact</a></li>
+    </ul>
+    <p class="text-center font-semibold text-lg">&copy; All Rights Reserved / Israel Olatunle</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
